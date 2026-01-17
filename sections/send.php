@@ -15,6 +15,15 @@ $chatId = 5500054763; // sizdagi chat_id
 $name = trim($_POST['name'] ?? '');
 $email = trim($_POST['email'] ?? '');
 $message = trim($_POST['message'] ?? '');
+$log = __DIR__ . '/form.log';
+$ip = $_SERVER['REMOTE_ADDR'];
+$name = $_POST['name'] ?? '';
+$email = $_POST['email'] ?? '';
+$message = $_POST['message'] ?? '';
+$time = date('Y-m-d H:i:s');
+
+file_put_contents($log, "[$time] $ip | $name | $email | $message\n", FILE_APPEND);
+
 
 if ($name === '' || $email === '' || $message === '') {
     exit('Bo‘sh maydon bor');
