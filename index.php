@@ -6,4 +6,3 @@
 <?php include 'sections/projects.php'; ?>
 <?php include 'sections/contact.php'; ?>
 
-<?php include 'footer.php'; ?>
