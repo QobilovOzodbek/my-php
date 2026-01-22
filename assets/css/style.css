@@ -547,3 +547,64 @@ footer {
         display: none; /* burger menu qo‘shish mumkin */
     }
 }
+
+/* BURGER MENU */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: #00e5ff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* Nav toggling */
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(11, 13, 16, 0.95);
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 229, 255, 0.2);
+    animation: slideDown 0.3s ease forwards;
+    z-index: 999;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+     RESPONSIVE UPDATES
+========================= */
+@media (max-width: 600px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
