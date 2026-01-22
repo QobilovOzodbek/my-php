@@ -14,12 +14,12 @@
 
 <body>
     <header class="navbar">
-        <div class="logo">Ozodbek.dev</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <a href="#home" class="logo">Ozodbek.dev</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
