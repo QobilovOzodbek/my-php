@@ -38,7 +38,7 @@
             <p>
                 <i class="fas fa-envelope"></i>
                 <a href="mailto:ozodbekqobilovinfo@example.com">
-                    ozodbekqobilovinfo@example.com
+                    ozodbekqobilovinfo@gmail.com
                 </a>
             </p>
 
