@@ -76,3 +76,11 @@ form.addEventListener("submit", function (e) {
         form.reset();
     }, 1500);
 });
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    burger.classList.toggle('toggle'); // agar burger animatsiya qilmoqchi bo‘lsangiz
+});
