@@ -15,7 +15,12 @@
 <body>
     <header class="navbar">
     <a href="#home" class="logo">Ozodbek.dev</a>
-    <nav>
+     <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
